@@ -1,0 +1,19 @@
+#loginWrapper{
+    -fx-background-color: #383838;
+}
+
+.label{
+    -fx-text-fill: #e8e8e8;
+    -fx-font-size: 11pt;
+}
+
+.data-fields {
+    -fx-background-radius: 4;
+}
+
+.button-green{
+    -fx-background-color: #A1B56C;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+    -fx-font-size: 11pt;
+}

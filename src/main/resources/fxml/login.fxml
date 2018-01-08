@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="loginWrapper" alignment="TOP_CENTER" prefHeight="331.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.chat.controllers.LoginController">
+   <children>
+      <Label fx:id="lblStatus" prefHeight="10.0" prefWidth="255.0" textFill="#d32828">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin></Label>
+      <HBox alignment="CENTER">
+         <children>
+            <Label text="Username:">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="txtUsername" prefHeight="32.0" prefWidth="206.0" promptText="UserName" styleClass="data-fields" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Password:">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Label>
+            <PasswordField fx:id="txtPassword" prefHeight="32.0" prefWidth="206.0" promptText="Password" styleClass="data-fields" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#actionLogin" prefHeight="30.0" prefWidth="100.0" styleClass="button-green" text="Login">
+         <VBox.margin>
+            <Insets left="170.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets top="40.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:CHAT_SYSTEM_DB.db</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <!--<property name="hibernate.hbm2ddl.auto">create</property>-->
+        
+		<mapping class="com.manager.chat.entity.User"/>
+        <mapping class="com.manager.chat.entity.ContactHistory"/>
+        <mapping class="com.manager.chat.entity.UserContact"/>
+		<mapping class="com.manager.chat.entity.Message"/>
+		<mapping class="com.manager.chat.entity.Manager"/>
+		<mapping class="com.manager.chat.entity.MessageFile"/>
+    </session-factory>
+</hibernate-configuration>
